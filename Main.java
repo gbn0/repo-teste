@@ -43,13 +43,14 @@ public class Main {
                     aux = true;
                 }
             }
-            if(!aux) {
+            if (!aux) {
                 l1.add(l2.get(i));
             }
             aux = false;
         }
         return l1;
     }
+
     public static int nroRepeat(ArrayList<Integer> l) {
 
         int aux = 0;
@@ -61,7 +62,7 @@ public class Main {
                 }
             }
             if (somaInterna > 1) {
-                aux += somaInterna - 1;
+                aux++;
             }
             somaInterna = 0;
         }
